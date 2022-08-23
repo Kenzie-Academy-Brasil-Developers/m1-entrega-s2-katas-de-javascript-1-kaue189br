@@ -1,139 +1,144 @@
-function oneThroughTwenty() {
-  let array = []
-  for (i=1; i< 21; i++ ) {
-    array.push(i)
-  }  
-  return console.log(array)
-}
-oneThroughTwenty()
-//call function oneThroughTwenty
-
-function evensToTwenty() {
+//01 ATIVIDADE
+function oneThroughTwenty(){
+  let meuRetorno = []
+  for(let contador = 1;contador <=20; contador++){
+  meuRetorno.push(contador)
+    }
+  return meuRetorno 
+    }
+  console.log(oneThroughTwenty())
     
-   let array2=[]
-  for (i=1; i< 21; i++ ) {
-    if (i%2==0) {
-    array2.push(i)}
-  }  
-  return console.log(array2)
-}
-evensToTwenty()
-
-//call function evensToTwenty
-
-function oddsToTwenty() {
-    
-  let array3=[]
-  for (i=1; i< 21; i++ ) {
-    if (i%2==1) {
-    array3.push(i)}
-  }  
-  return console.log(array3)
-   
-}
-oddsToTwenty()
-
-//call function oddsToTwenty
-
-function multiplesOfFive() {
-    
-let arrayMultiples = []
-for (i=1; i < 21; i++ ) {
+  //02 ATIVIDADE
+  function evensToTwenty(){
+      let meuRetorno = []
+      
+      for(let contador = 1;contador <=20; contador++){
+          if(contador % 2 == 0){
+              meuRetorno.push(contador)    
+          }
+            
+      }
+      return meuRetorno 
+      
+      }
+      console.log(evensToTwenty())
   
-  arrayMultiples.push(i*5)
-}
-  return console.log(arrayMultiples)
-}
-
-multiplesOfFive()
-
-//call function multiplesOfFive
-
-function squareNumbers() {
-    
-  let arraySquare = []
-  for (i=1; i < 11; i++ ) {
-    
-    arraySquare.push(i*i)
-  }
-    return console.log(arraySquare)
-  }
   
-  squareNumbers()
+      //03 ATIVIDADE
+      function oddsToTwenty(){
+          let meuRetorno = []
+          
+          for(let contador = 1;contador <=20; contador++){
+              if(contador % 2 == 1){
+                  meuRetorno.push(contador)    
+              }
+                   
+          }
+          return meuRetorno 
+                    }
+          console.log(oddsToTwenty())
   
-    
-
-
-//call function squareNumbers
-
-function countingBackwards() {
-    
- let arrayCountingBackwards = []
-  for (i=20; i > 0; i-- ) {
-   
-   arrayCountingBackwards.push(i)
-   
-   }
-  return console.log(arrayCountingBackwards)
-}
-    
-    countingBackwards()
-
-//call function countingBackwards
-
-function evenNumbersBackwards() {
-    
-  let arrayEven= []
-  for (i=20; i > 0; i-- ) {
-    if (i%2==0) {
-   arrayEven.push(i)
-   }
   
-}
-return console.log(arrayEven)
-}
-evenNumbersBackwards()
-
-//call function evenNumbersBackwards
-
-function oddNumbersBackwards() {
+          //04 ATIVIDADE
+          function multiplesOfFive(){
+              let meuRetorno = []
+              
+              for(let contador = 1;contador <=100; contador++){
+                  if(contador % 5 == 0){
+                      meuRetorno.push(contador)    
+                  }
+                            
+              }
+              return meuRetorno 
+                }
+              console.log(multiplesOfFive())
+  
+              //05 ATIVIDADE
     
-  let arrayOdd= []
-
-  for (i=20; i > 0; i-- ) {
-    if (i%2==1) {
-   arrayOdd.push(i)
-   }
-}
-return console.log(arrayOdd)
-}
-oddNumbersBackwards()
-//call function oddNumbersBackwards
-
-function multiplesOfFiveBackwards() {
-    
-  let arrayMultiplesOf5= []
-
-  for (i=20; i > 0; i-- ) {
-    
-   arrayMultiplesOf5.push(i*5)
+              function squareNumbers(){
+                  let meuRetorno = []
+                  
+                  for(let contador = 1;contador <=10; contador++){
+                          meuRetorno.push(contador * contador)    
+                      }
+                  return meuRetorno 
+                  
+                  }
+                  console.log(squareNumbers())
+                  
+                  //06 ATIVIDADE
+  function countingBackwards(){
+      let meuRetorno = []
+      for(let contador = 20;contador >=1; contador--){
+      meuRetorno.push(contador)
+          }
+      return meuRetorno 
+            }
+      console.log(countingBackwards())
+  
+      // 07 ATIVIDADE
+  
+     
+      function evenNumbersBackwards(){
+          let meuRetorno = []
+          
+          for(let contador = 20;contador >=1; contador--){
+              if(contador % 2  == 0 ){
+                  meuRetorno.push(contador)    
+              }
+                
+          }
+          return meuRetorno 
+           }
+             console.log(evenNumbersBackwards())
+  
+          //08 ATIVIDADE
+  
+           
+      function oddNumbersBackwards(){
+          let meuRetorno = []
+          
+          for(let contador = 20;contador >=1; contador--){
+              if(contador % 2  == 1 ){
+                  meuRetorno.push(contador)    
+              }
+          }
+          return meuRetorno 
+          }
    
-}
-return console.log(arrayMultiplesOf5)
-}
-multiplesOfFiveBackwards()
-
-//call function multiplesOfFiveBackwards
-
-function squareNumbersBackwards() {
-  let arraySquareBackwards= []
-
-  for (i=10; i > 0; i-- ) {
-    
-   arraySquareBackwards.push(i*i)
+          console.log(oddNumbersBackwards())
+  
+          //09 ATIVIDADE
+  
+           
+      function multiplesOfFiveBackwards(){
+          let meuRetorno = []
+          
+          for(let contador = 100;contador >=1; contador--){
+              if(contador % 5  == 0 ){
+                  meuRetorno.push(contador)    
+              }
+          
+          }
+          return meuRetorno 
+          }
    
-}
-return console.log(arraySquareBackwards)
-}
-squareNumbersBackwards()
-//call function squareNumbersBackwards
+          console.log(multiplesOfFiveBackwards())
+  
+  
+          //10 ATIVIDADE
+  
+          function squareNumbersBackwards(){
+              let meuRetorno = []
+              
+              for(let contador = 10;contador >=1; contador--){
+              
+                      meuRetorno.push(contador * contador)    
+                  
+              
+              
+              }
+              return meuRetorno 
+              
+              }
+              console.log(squareNumbersBackwards())
