@@ -1,101 +1,139 @@
-// comece a criar a sua função add na linha abaixo
-
-function add(x, y){
-
-  return x + y;
+function oneThroughTwenty() {
+  let array = []
+  for (i=1; i< 21; i++ ) {
+    array.push(i)
+  }  
+  return console.log(array)
 }
-console.log(add(3,5))
+oneThroughTwenty()
+//call function oneThroughTwenty
 
-// descomente a linha seguinte para testar sua função
-console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
-
-
-// comece a criar a sua função multiply na linha abaixo
-
-function multiply(x,y){
-
-  let multiplicacao = 0;
-
-  for(let i = 0; i < y; i++){
-      multiplicacao = add(x, multiplicacao)
-  }
-  return multiplicacao;
-
+function evensToTwenty() {
+    
+   let array2=[]
+  for (i=1; i< 21; i++ ) {
+    if (i%2==0) {
+    array2.push(i)}
+  }  
+  return console.log(array2)
 }
-console.log(multiply(4,6))
+evensToTwenty()
 
-// descomente a linha seguinte para testar sua função
-console.assert(multiply(4, 6) === 24, 'A função multiply não está funcionando como esperado');
+//call function evensToTwenty
 
-
-// comece a criar a sua função power na linha abaixo
-
-function power(x,n){
-
-  let potencia = 1;
-
-  for(let i = 0; i < n; i++){
-      potencia = multiply(x, potencia)
-  }
-  return potencia;
+function oddsToTwenty() {
+    
+  let array3=[]
+  for (i=1; i< 21; i++ ) {
+    if (i%2==1) {
+    array3.push(i)}
+  }  
+  return console.log(array3)
+   
 }
-console.log(power(3,4))
+oddsToTwenty()
 
-// descomente a linha seguinte para testar sua função
-console.assert(power(3, 4) === 81, 'A função power não está funcionando como esperado');
+//call function oddsToTwenty
 
-
-// comece a criar a sua função factorial na linha abaixo
-function factor(x){
-
-  let fatorial = x;
-
-  for(let i = x-1; i > 0 ; i--){
-      fatorial = multiply(i, fatorial)
-  }   
-  return fatorial;
-}
-
-console.assert(factorial(5))==120
-
-// descomente a linha seguinte para testar sua função
-console.assert(factorial(5) === 120, 'A função factorial não está funcionando como esperado');
-
-
-/**
-* BONUS (aviso: o grau de dificuldade é bem maior !!!)
-*/
-
-// crie a função fibonacci
-
-/*
-Sequência de Fibonacci
-A sucessão de Fibonacci é uma sequência de números inteiros iniciados por zero e um, 
-no qual cada termo subsequente corresponde a soma dos dois números anteriores: 
-0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584...
-*/
-function fibonacci(x){
+function multiplesOfFive() {
+    
+let arrayMultiples = []
+for (i=1; i < 21; i++ ) {
   
-  let arrayFibonacci = [0,1];
-
-  let valorAnterior = 0;
-  let valorAtual = 1;
-  let proximoValor = 0;
-
-  for(let i = 2; i <= x; i++){
-
-      proximoValor = add(valorAnterior, valorAtual);
-
-      valorAnterior = valorAtual;
-
-      valorAtual = proximoValor;
-
-      arrayFibonacci.push(proximoValor);
-  }
-  return arrayFibonacci[x];
+  arrayMultiples.push(i*5)
+}
+  return console.log(arrayMultiples)
 }
 
-console.log(fibonacci(7))
+multiplesOfFive()
 
-// descomente a linha para testar sua função
-console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+//call function multiplesOfFive
+
+function squareNumbers() {
+    
+  let arraySquare = []
+  for (i=1; i < 11; i++ ) {
+    
+    arraySquare.push(i*i)
+  }
+    return console.log(arraySquare)
+  }
+  
+  squareNumbers()
+  
+    
+
+
+//call function squareNumbers
+
+function countingBackwards() {
+    
+ let arrayCountingBackwards = []
+  for (i=20; i > 0; i-- ) {
+   
+   arrayCountingBackwards.push(i)
+   
+   }
+  return console.log(arrayCountingBackwards)
+}
+    
+    countingBackwards()
+
+//call function countingBackwards
+
+function evenNumbersBackwards() {
+    
+  let arrayEven= []
+  for (i=20; i > 0; i-- ) {
+    if (i%2==0) {
+   arrayEven.push(i)
+   }
+  
+}
+return console.log(arrayEven)
+}
+evenNumbersBackwards()
+
+//call function evenNumbersBackwards
+
+function oddNumbersBackwards() {
+    
+  let arrayOdd= []
+
+  for (i=20; i > 0; i-- ) {
+    if (i%2==1) {
+   arrayOdd.push(i)
+   }
+}
+return console.log(arrayOdd)
+}
+oddNumbersBackwards()
+//call function oddNumbersBackwards
+
+function multiplesOfFiveBackwards() {
+    
+  let arrayMultiplesOf5= []
+
+  for (i=20; i > 0; i-- ) {
+    
+   arrayMultiplesOf5.push(i*5)
+   
+}
+return console.log(arrayMultiplesOf5)
+}
+multiplesOfFiveBackwards()
+
+//call function multiplesOfFiveBackwards
+
+function squareNumbersBackwards() {
+  let arraySquareBackwards= []
+
+  for (i=10; i > 0; i-- ) {
+    
+   arraySquareBackwards.push(i*i)
+   
+}
+return console.log(arraySquareBackwards)
+}
+squareNumbersBackwards()
+//call function squareNumbersBackwards
